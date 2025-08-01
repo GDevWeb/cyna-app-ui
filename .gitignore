@@ -7,15 +7,34 @@ yarn-error.log*
 pnpm-debug.log*
 lerna-debug.log*
 
-node_modules
+# Runtime data
+pids
+*.pid
+*.seed
+*.pid.lock
+
+# Build
 dist
 dist-ssr
-# *.local
+build
+.out
+.next
 
-# Editor directories and files
+# Env files
+.env
+.env.*.local
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Dependency directories
+node_modules/
+
+# Editor configs
 .vscode/*
 !.vscode/extensions.json
-.idea
+.idea/
 .DS_Store
 *.suo
 *.ntvs*
@@ -23,5 +42,8 @@ dist-ssr
 *.sln
 *.sw?
 
-
-.env.local
+# Optional OS junk
+Thumbs.db
+ehthumbs.db
+Icon?
+Desktop.ini
